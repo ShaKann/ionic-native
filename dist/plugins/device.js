@@ -36,7 +36,6 @@ var Device = (function () {
     ], Device, "device", null);
     Device = __decorate([
         plugin_1.Plugin({
-            name: 'Device',
             plugin: 'cordova-plugin-device',
             pluginRef: 'device',
             repo: 'https://github.com/apache/cordova-plugin-device'
