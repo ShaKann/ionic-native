@@ -3,18 +3,19 @@
         "module": "commonjs",
         "target": "es5",
         "noImplicitAny": false,
-        "rootDir": ".",
+        "rootDir": "./src",
         "sourceMap": true,
         "declaration": true,
         "emitDecoratorMetadata": true,
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "outDir": "dist/"
     },
     "exclude": [
-        "node_modules"
-    ],
-    "files": [
-        "src/index.ts",
-        "typings/es6-shim/es6-shim.d.ts"
+        "node_modules",
+        "demo",
+        "scripts",
+        "ng1demo",
+        "dist"
     ],
     "compileOnSave": false,
     "buildOnSave": false,

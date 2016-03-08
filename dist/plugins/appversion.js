@@ -5,6 +5,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 var plugin_1 = require('./plugin');
 /**
  * Reads the version of your app from the target build settings.
@@ -75,22 +78,35 @@ var AppVersion = (function () {
         return new Promise(function (res, rej) { });
     };
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
     ], AppVersion, "getAppName", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
     ], AppVersion, "getPackageName", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
     ], AppVersion, "getVersionCode", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
     ], AppVersion, "getVersionNumber", null);
     AppVersion = __decorate([
         plugin_1.Plugin({
             plugin: 'cordova-plugin-app-version',
             pluginRef: 'cordova.getAppVersion'
-        })
+        }), 
+        __metadata('design:paramtypes', [])
     ], AppVersion);
     return AppVersion;
 }());

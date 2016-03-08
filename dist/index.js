@@ -38,6 +38,8 @@ var toast_1 = require('./plugins/toast');
 exports.Toast = toast_1.Toast;
 var touchid_1 = require('./plugins/touchid');
 exports.TouchID = touchid_1.TouchID;
+var file_1 = require('./plugins/file');
+exports.File = file_1.File;
 // Window export to use outside of a module loading system
 window['IonicNative'] = {
     ActionSheet: actionsheet_1.ActionSheet,
@@ -57,7 +59,8 @@ window['IonicNative'] = {
     Push: push_1.Push,
     StatusBar: statusbar_1.StatusBar,
     Toast: toast_1.Toast,
-    TouchID: touchid_1.TouchID
+    TouchID: touchid_1.TouchID,
+    File: file_1.File
 };
 // To help developers using cordova, we listen for the device ready event and
 // log an error if it didn't fire in a reasonable amount of time. Generally,

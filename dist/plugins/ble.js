@@ -5,6 +5,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 var plugin_1 = require('./plugin');
 var Observable_1 = require('rxjs/Observable');
 /**
@@ -463,65 +466,108 @@ var BLE = (function () {
     __decorate([
         plugin_1.Cordova({
             observable: true
-        })
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Array, Number]), 
+        __metadata('design:returntype', void 0)
     ], BLE, "scan", null);
     __decorate([
         plugin_1.Cordova({
             observable: true,
             clearFunction: 'stopScan',
             clearWithArgs: true
-        })
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Array]), 
+        __metadata('design:returntype', void 0)
     ], BLE, "startScan", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
     ], BLE, "stopScan", null);
     __decorate([
         plugin_1.Cordova({
             observable: true,
             clearFunction: 'disconnect',
             clearWithArgs: true
-        })
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String]), 
+        __metadata('design:returntype', void 0)
     ], BLE, "connect", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String]), 
+        __metadata('design:returntype', void 0)
     ], BLE, "disconnect", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, String, String]), 
+        __metadata('design:returntype', void 0)
     ], BLE, "read", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, String, String, ArrayBuffer]), 
+        __metadata('design:returntype', void 0)
     ], BLE, "write", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, String, String, ArrayBuffer]), 
+        __metadata('design:returntype', void 0)
     ], BLE, "writeWithoutResponse", null);
     __decorate([
         plugin_1.Cordova({
             observable: true,
             clearFunction: 'stopNotification',
             clearWithArgs: true
-        })
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, String, String]), 
+        __metadata('design:returntype', void 0)
     ], BLE, "startNotification", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, String, String]), 
+        __metadata('design:returntype', void 0)
     ], BLE, "stopNotification", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String]), 
+        __metadata('design:returntype', void 0)
     ], BLE, "isConnected", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
     ], BLE, "isEnabled", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
     ], BLE, "showBluetoothSettings", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
     ], BLE, "enable", null);
     BLE = __decorate([
         plugin_1.Plugin({
             plugin: 'cordova-plugin-ble-central',
             pluginRef: 'ble',
             repo: 'https://github.com/don/cordova-plugin-ble-central'
-        })
+        }), 
+        __metadata('design:paramtypes', [])
     ], BLE);
     return BLE;
 }());

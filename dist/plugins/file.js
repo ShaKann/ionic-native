@@ -9,44 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var plugin_1 = require('./plugin');
-/**
- * @name Device
- * @description
- * Access information about the underlying device and platform.
- *
- * @usage
- * ```js
- * let info = Device.getDevice();
- * ```
- */
-var Device = (function () {
-    function Device() {
+var File = (function () {
+    function File() {
     }
-    Object.defineProperty(Device, "device", {
-        /**
-         * Returns the whole device object.
-         *
-         * @returns {Object} The device object.
-         */
-        get: function () {
-            return window.device;
-        },
-        enumerable: true,
-        configurable: true
-    });
+    File.getFreeDiskSpace = function () {
+        return new Promise(function (res, rej) { });
+    };
     __decorate([
-        plugin_1.CordovaProperty, 
-        __metadata('design:type', Object)
-    ], Device, "device", null);
-    Device = __decorate([
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
+    ], File, "getFreeDiskSpace", null);
+    File = __decorate([
         plugin_1.Plugin({
-            plugin: 'cordova-plugin-device',
-            pluginRef: 'device',
-            repo: 'https://github.com/apache/cordova-plugin-device'
+            plugin: 'cordova-plugin-file',
+            pluginRef: 'cordova.file'
         }), 
         __metadata('design:paramtypes', [])
-    ], Device);
-    return Device;
+    ], File);
+    return File;
 }());
-exports.Device = Device;
-//# sourceMappingURL=device.js.map
+exports.File = File;
+//# sourceMappingURL=file.js.map

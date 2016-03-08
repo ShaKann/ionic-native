@@ -5,6 +5,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 var plugin_1 = require('./plugin');
 /**
  * @name Facebook
@@ -272,38 +275,66 @@ var Facebook = (function () {
         return new Promise(function (res, rej) { });
     };
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Array]), 
+        __metadata('design:returntype', void 0)
     ], Facebook, "login", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
     ], Facebook, "logout", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
     ], Facebook, "getLoginStatus", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
     ], Facebook, "getAccessToken", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Object]), 
+        __metadata('design:returntype', void 0)
     ], Facebook, "showDialog", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, Array]), 
+        __metadata('design:returntype', void 0)
     ], Facebook, "api", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, Object, Number]), 
+        __metadata('design:returntype', void 0)
     ], Facebook, "logEvent", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Number, String]), 
+        __metadata('design:returntype', void 0)
     ], Facebook, "logPurchase", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Object]), 
+        __metadata('design:returntype', void 0)
     ], Facebook, "appInvite", null);
     Facebook = __decorate([
         plugin_1.Plugin({
             plugin: 'cordova-plugin-facebook4',
             pluginRef: 'facebookConnectPlugin',
             repo: 'https://github.com/jeduan/cordova-plugin-facebook4'
-        })
+        }), 
+        __metadata('design:paramtypes', [])
     ], Facebook);
     return Facebook;
 }());

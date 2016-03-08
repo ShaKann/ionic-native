@@ -5,6 +5,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 var plugin_1 = require('./plugin');
 /**
  * @name Calendar
@@ -341,64 +344,116 @@ var Calendar = (function () {
         return new Promise(function (res, rej) { });
     };
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Object]), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "createCalendar", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String]), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "deleteCalendar", null);
     __decorate([
         plugin_1.Cordova({
             sync: true
-        })
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', Object)
     ], Calendar, "getCalendarOptions", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, String, String, Date, Date]), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "createEvent", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, String, String, Date, Date, Object]), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "createEventWithOptions", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, String, String, Date, Date]), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "createEventInteractively", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, String, String, Date, Date, Object]), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "createEventInteractivelyWithOptions", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, String, String, Date, Date]), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "findEvent", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, String, String, Date, Date, Object]), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "findEventWithOptions", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Date, Date]), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "listEventsInRange", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "listCalendars", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String]), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "findAllEventsInNamedCalendar", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, String, String, Date, Date, String, String, String, Date, Date]), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "modifyEvent", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, String, String, Date, Date, String, String, String, Date, Date, Object]), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "modifyEventWithOptions", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, String, String, Date, Date]), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "deleteEvent", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String, String, String, Date, Date, String]), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "deleteEventFromNamedCalendar", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Date]), 
+        __metadata('design:returntype', void 0)
     ], Calendar, "openCalendar", null);
     Calendar = __decorate([
         plugin_1.Plugin({
             plugin: 'cordova-plugin-calendar',
             pluginRef: 'plugins.calendar',
             repo: 'https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin'
-        })
+        }), 
+        __metadata('design:paramtypes', [])
     ], Calendar);
     return Calendar;
 }());
