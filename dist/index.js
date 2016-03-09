@@ -40,6 +40,8 @@ var touchid_1 = require('./plugins/touchid');
 exports.TouchID = touchid_1.TouchID;
 var file_1 = require('./plugins/file');
 exports.File = file_1.File;
+exports.LocalFileSystem = file_1.LocalFileSystem;
+exports.FileSystem = file_1.FileSystem;
 // Window export to use outside of a module loading system
 window['IonicNative'] = {
     ActionSheet: actionsheet_1.ActionSheet,

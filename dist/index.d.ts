@@ -16,5 +16,5 @@ import { Push } from './plugins/push';
 import { StatusBar } from './plugins/statusbar';
 import { Toast } from './plugins/toast';
 import { TouchID } from './plugins/touchid';
-import { File } from './plugins/file';
-export { ActionSheet, AppRate, AppVersion, BarcodeScanner, Badge, BLE, Camera, Calendar, Clipboard, Contacts, DatePicker, Device, Facebook, Geolocation, Push, StatusBar, Toast, TouchID, File };
+import { File, LocalFileSystem, FileSystem } from './plugins/file';
+export { ActionSheet, AppRate, AppVersion, BarcodeScanner, Badge, BLE, Camera, Calendar, Clipboard, Contacts, DatePicker, Device, Facebook, Geolocation, Push, StatusBar, Toast, TouchID, File, LocalFileSystem, FileSystem };
