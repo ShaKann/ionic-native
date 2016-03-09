@@ -9,22 +9,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var plugin_1 = require('./plugin');
+(function (LocalFileSystem) {
+    LocalFileSystem[LocalFileSystem["TEMPORARY"] = 0] = "TEMPORARY";
+    LocalFileSystem[LocalFileSystem["PERSISTENT"] = 1] = "PERSISTENT";
+})(exports.LocalFileSystem || (exports.LocalFileSystem = {}));
+var LocalFileSystem = exports.LocalFileSystem;
+var FileSystem = (function () {
+    function FileSystem() {
+    }
+    return FileSystem;
+}());
+exports.FileSystem = FileSystem;
 var File = (function () {
     function File() {
     }
-    File.getFreeDiskSpace = function () {
+    File.requestFileSystem = function (type, size) {
         return new Promise(function (res, rej) { });
     };
     __decorate([
         plugin_1.Cordova(), 
         __metadata('design:type', Function), 
-        __metadata('design:paramtypes', []), 
+        __metadata('design:paramtypes', [Number, Number]), 
         __metadata('design:returntype', void 0)
-    ], File, "getFreeDiskSpace", null);
+    ], File, "requestFileSystem", null);
     File = __decorate([
         plugin_1.Plugin({
             plugin: 'cordova-plugin-file',
-            pluginRef: 'cordova.file'
+            pluginRef: ''
         }), 
         __metadata('design:paramtypes', [])
     ], File);
