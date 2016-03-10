@@ -24,7 +24,7 @@ import {Push} from './plugins/push';
 import {StatusBar} from './plugins/statusbar';
 import {Toast} from './plugins/toast';
 import {TouchID} from './plugins/touchid';
-import {File, LocalFileSystem, FileSystem} from './plugins/file';
+import {File, LocalFileSystem} from './plugins/file';
 
 export {
     ActionSheet,
@@ -45,7 +45,7 @@ export {
     StatusBar,
     Toast,
     TouchID,
-    File, LocalFileSystem, FileSystem
+    File, LocalFileSystem
 }
 
 // Window export to use outside of a module loading system

@@ -6,10 +6,6 @@ export enum LocalFileSystem{
     PERSISTENT = 1
 }
 
-export class FileSystem {
-    public name: string;
-}
-
 @Plugin({
     plugin: 'cordova-plugin-file',
     pluginRef: ''

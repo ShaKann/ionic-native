@@ -14,12 +14,6 @@ var plugin_1 = require('./plugin');
     LocalFileSystem[LocalFileSystem["PERSISTENT"] = 1] = "PERSISTENT";
 })(exports.LocalFileSystem || (exports.LocalFileSystem = {}));
 var LocalFileSystem = exports.LocalFileSystem;
-var FileSystem = (function () {
-    function FileSystem() {
-    }
-    return FileSystem;
-}());
-exports.FileSystem = FileSystem;
 var File = (function () {
     function File() {
     }
