@@ -15,4 +15,9 @@ export class File {
     static requestFileSystem(type : LocalFileSystem, size:number) {
         return new Promise<FileSystem>((res, rej) => { });
     }
+
+    @Cordova()
+    static resolveLocalFileSystemURL(url:string) {
+        return new Promise<Entry>((res, rej) => { });
+    }
 }
