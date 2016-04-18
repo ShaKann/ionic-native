@@ -4,4 +4,5 @@ export declare enum LocalFileSystem {
 }
 export declare class File {
     static requestFileSystem(type: LocalFileSystem, size: number): Promise<FileSystem>;
+    static resolveLocalFileSystemURL(url: string): Promise<Entry>;
 }

@@ -20,12 +20,21 @@ var File = (function () {
     File.requestFileSystem = function (type, size) {
         return new Promise(function (res, rej) { });
     };
+    File.resolveLocalFileSystemURL = function (url) {
+        return new Promise(function (res, rej) { });
+    };
     __decorate([
         plugin_1.Cordova(), 
         __metadata('design:type', Function), 
         __metadata('design:paramtypes', [Number, Number]), 
         __metadata('design:returntype', void 0)
     ], File, "requestFileSystem", null);
+    __decorate([
+        plugin_1.Cordova(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String]), 
+        __metadata('design:returntype', void 0)
+    ], File, "resolveLocalFileSystemURL", null);
     File = __decorate([
         plugin_1.Plugin({
             plugin: 'cordova-plugin-file',
